@@ -44,4 +44,4 @@ function cd() {
 }
 
 # Dotfiles management
-alias dots='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dots='git --git-dir=$HOME/.dots/ --work-tree=$HOME'
