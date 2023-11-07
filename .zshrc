@@ -5,7 +5,7 @@ export ZSH=~/.oh-my-zsh
 ZSH_THEME="agnoster"
 
 # oh-my-zsh plugins
-plugins=(git)
+plugins=(git ssh-agent)
 
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
