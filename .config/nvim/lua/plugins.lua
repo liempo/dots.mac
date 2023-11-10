@@ -70,21 +70,6 @@ return {
         end
     },
 
-    { -- Github Copilot
-        "zbirenbaum/copilot.lua",
-        cmd = "Copilot",
-        event = "InsertEnter",
-        config = function()
-            require("copilot").setup({
-                panel = {
-                    enabled = true,
-                    auto_refresh = true
-                }
-            })
-            vim.api.nvim_set_keymap("n", "<Leader>c", ":Copilot panel", {})
-        end
-    },
-
     { -- Line indentaion guides
         "lukas-reineke/indent-blankline.nvim",
         config = function()
