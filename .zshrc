@@ -7,6 +7,10 @@ ZSH_THEME="agnoster"
 # oh-my-zsh plugins
 plugins=(git ssh-agent)
 
+# Automatically load ssh keys and configure custom git ssh command
+zstyle :omz:plugins:ssh-agent identities id_ed25519_personal id_ed25519_work
+export GIT_SSH_COMMAND="bash ~/.scripts/git_ssh_wrapper.sh"
+
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
@@ -45,3 +49,5 @@ function cd() {
 
 # Dotfiles management
 alias dots='git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+alias xcodebs='$HOME/.tools/xcode-build-server/xcode-build-server'
+alias vim="nvim"
